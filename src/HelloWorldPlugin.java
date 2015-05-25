@@ -1,7 +1,7 @@
 /**
  * Created by Meli on 25.05.2015.
  */
-public class HelloWorldPlugins {
+public class HelloWorldPlugin {
 }
 import java.util.logging.Logger;
 

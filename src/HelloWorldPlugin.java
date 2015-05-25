@@ -1,8 +1,6 @@
 /**
  * Created by Meli on 25.05.2015.
  */
-public class HelloWorldPlugin {
-}
 import java.util.logging.Logger;
 
         import org.bukkit.command.Command;
@@ -31,10 +29,10 @@ public class HelloWorldPlugin extends JavaPlugin {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        if (command.getName().equalsIgnoreCase("Helloworld")) {
+        if (command.getName().equalsIgnoreCase("HelloWorld")) {
 
             if (sender instanceof Player){
-                String message = "[Server]: Hallo Fotzis <3";
+                String message = "[Server]: Hallo <3";
                 getServer().broadcastMessage(message);
                 return true;
             } else {

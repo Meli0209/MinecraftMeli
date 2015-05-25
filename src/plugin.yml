@@ -5,12 +5,12 @@ website:
 main: HelloWorldPlugin
 
 commands:
-    whythehell:
+    HelloWorld:
       description: Fotzi!
       usage: /hello
 
     kill:
-      description: Kills thy Player!
+      description: Kills the Player!
       usage: /kill
 
 

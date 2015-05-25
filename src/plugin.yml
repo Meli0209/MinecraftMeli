@@ -1,0 +1,17 @@
+name: HelloWorldPlugin
+
+author: MW
+website:
+main: HelloWorldPlugin
+
+commands:
+    whythehell:
+      description: Fotzi!
+      usage: /hello
+
+    kill:
+      description: Kills thy Player!
+      usage: /kill
+
+
+version: 0.1

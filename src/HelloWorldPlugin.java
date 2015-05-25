@@ -9,18 +9,20 @@ import java.util.logging.Logger;
         import org.bukkit.plugin.java.JavaPlugin;
 
 public class HelloWorldPlugin extends JavaPlugin {
-    public static Logger log =Logger.getLogger("Minecraft");
+    public static Logger log = Logger.getLogger("Minecraft");
 
     public void onLoad() {
 
         log.info("[HelloWorldPlugin] Loaded...");
 
     }
+
     public void onEnable() {
 
         log.info("[HelloWorldPlugin] Starting up...");
 
     }
+
     public void onDisable() {
 
         log.info("[HelloWorldPlugin] Shuting down...");
@@ -31,7 +33,7 @@ public class HelloWorldPlugin extends JavaPlugin {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (command.getName().equalsIgnoreCase("HelloWorld")) {
 
-            if (sender instanceof Player){
+            if (sender instanceof Player) {
                 String message = "[Server]: Hallo <3";
                 getServer().broadcastMessage(message);
                 return true;
@@ -40,10 +42,11 @@ public class HelloWorldPlugin extends JavaPlugin {
             }
 
 
+        } else if (command.getName().equalsIgnoreCase("kill")) {
+            Player opfer = sender.getServer().getPlayer(args[0]);
+            if () {
 
-        } else if (command.getName().equalsIgnoreCase("kill")){
-            Player opfer = sender.getServer().getPlayer(args[0])
-            if ()
-        }
-
+              }
+         }
     }
+}

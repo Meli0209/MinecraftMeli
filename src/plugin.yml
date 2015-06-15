@@ -13,5 +13,14 @@ commands:
       description: Kills the Player!
       usage: /kill
 
+    up:
+       description: lifts blocks
+       usage: /up
+
+    flyper:
+        description: creates flying creeper
+        usage: /flyper
+
 
 version: 0.1
+
